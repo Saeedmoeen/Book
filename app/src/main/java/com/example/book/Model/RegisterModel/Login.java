@@ -1,4 +1,4 @@
-package com.example.book.Model;
+package com.example.book.Model.RegisterModel;
 
 public class Login {
     private String username, password;

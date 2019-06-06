@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/parent-layout">
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout">
 
-   <TextView
-       android:id="@+id/tv-name"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="saeed"
-       android:layout_centerHorizontal="true"
-       android:layout_margin="10dp"
-       android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:mipmap/sym_def_app_icon"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_image"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_margin="5dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_margin="5dp"
+        android:text="sadawafafawf"
+        android:textSize="18sp"
+        />
+
+
 
 </RelativeLayout>
